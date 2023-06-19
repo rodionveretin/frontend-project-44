@@ -4,7 +4,7 @@ import { getRandomNaturalNumber } from '../funcs.js';
 export default () => {
   const generateAnswer = () => {
     const findGCD = (firstNumber, secondNumber) => {
-      for (let i = 2; i <= Math.max(firstNumber, secondNumber); i += 1) {
+      for (let i = Math.max(firstNumber, secondNumber); i >= 1; i -= 1) {
         if ((firstNumber % i === 0) && (secondNumber % i === 0)) {
           return String(i);
         }
