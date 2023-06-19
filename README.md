@@ -3,5 +3,6 @@
 
 [Аскинема с примером установки пакета, запуска игры, победой и поражением игрока](https://asciinema.org/a/nXObtB01Wjl0q2pDZLtTQksK0)
 
-
 [Аскинема brain-calc](https://asciinema.org/a/DEiYaA5BT0dIxK07vPNEBsgOV)
+
+[Аскинема brain-gcd](https://asciinema.org/a/VD1hUsOFu0i3uGckPnVTqyyqc)
