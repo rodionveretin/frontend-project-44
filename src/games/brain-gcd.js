@@ -1,22 +1,15 @@
 import gameHandler from '../index.js';
-import { getRandomNaturalNumber } from '../funcs.js';
+import { getRandomInRange, findGCD } from '../utils.js';
 
 export default () => {
+  const rules = 'Find the greatest common divisor of given numbers.';
   const generateAnswer = () => {
-    const findGCD = (firstNumber, secondNumber) => {
-      for (let i = Math.max(firstNumber, secondNumber); i >= 1; i -= 1) {
-        if ((firstNumber % i === 0) && (secondNumber % i === 0)) {
-          return String(i);
-        }
-      }
-      return '1';
-    };
-    const firstNumber = getRandomNaturalNumber();
-    const secondNumber = getRandomNaturalNumber();
+    const firstNumber = getRandomInRange(1, 100);
+    const secondNumber = getRandomInRange(1, 100);
     const correctAnswer = findGCD(firstNumber, secondNumber);
     const numbers = `${firstNumber} ${secondNumber}`;
     return [numbers, correctAnswer];
   };
 
-  console.log(gameHandler('Find the greatest common divisor of given numbers.', generateAnswer));
+  console.log(gameHandler(rules, generateAnswer));
 };

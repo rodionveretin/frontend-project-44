@@ -1,13 +1,13 @@
 import gameHandler from '../index.js';
-import { getRandomNumber } from '../funcs.js';
+import { getRandomInRange, isEven } from '../utils.js';
 
 export default () => {
-  const checkEven = (number) => number % 2 === 0;
+  const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
   const generateAnswer = () => {
-    const secretNumber = getRandomNumber();
-    const correctAnswer = checkEven(secretNumber) ? 'yes' : 'no';
+    const secretNumber = getRandomInRange(1, 200);
+    const correctAnswer = isEven(secretNumber) ? 'yes' : 'no';
     return [secretNumber, correctAnswer];
   };
 
-  console.log(gameHandler('Answer "yes" if the number is even, otherwise answer "no".', generateAnswer));
+  console.log(gameHandler(rules, generateAnswer));
 };

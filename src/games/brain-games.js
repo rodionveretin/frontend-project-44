@@ -1,5 +1,5 @@
-import getName from '../cli.js';
+import makeWelcome from '../cli.js';
 
 export default () => {
-  getName();
+  makeWelcome();
 };

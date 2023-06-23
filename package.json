@@ -1,8 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/rodionveretin/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/rodionveretin/frontend-project-44/actions)",
-  "main": "index.js",
+  "description": "A set of five console games built using popular mobile brain training apps",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
